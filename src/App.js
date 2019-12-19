@@ -1,17 +1,21 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import Layout from './components/Layout';
+import history from './history';
+import { allRoutes } from './routes';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router history={history}>
         <Layout>
-          <Header />
+          <Switch>
+            {allRoutes.map((route, i) => <Route key={i} {...route} />)}
+          </Switch>
         </Layout>
-      </BrowserRouter>
+      </Router >
     </div>
   );
 }
