@@ -11,7 +11,6 @@ function App() {
     <div className="App">
       <Router history={history}>
         <Layout>
-          <Header />
           <Switch>
             {allRoutes.map((route, i) => <Route key={i} {...route} />)}
           </Switch>

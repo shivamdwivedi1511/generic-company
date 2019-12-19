@@ -1,4 +1,5 @@
 export const ROUTES_PATH = {
+    HOME:'/',
     SERVICE: '/service',
     INDUSTRIES: '/industries',
     SOLUTIONS: '/solutions',

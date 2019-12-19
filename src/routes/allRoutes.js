@@ -7,12 +7,18 @@ import Insight from "../components/Insight";
 import Career from "../components/Career";
 import Contact from "../components/Contact";
 import Success from "../components/Success";
+import Home from "../components/Home";
 
 export const allRoutes = [
     {
         path: ROUTES_PATH.SERVICE,
         exact: true,
         component: Service
+    },
+    {
+        path:ROUTES_PATH.HOME,
+        exact:true,
+        component:Home
     },
     {
         path: ROUTES_PATH.INDUSTRIES,
