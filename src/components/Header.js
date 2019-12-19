@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { ROUTES_PATH } from '../constants';
+import logo from '../assets/images/logo.svg'; 
 
 export default function Header() {
     return (
-        <div>
-            <div>company logo </div>
+        <div className='header'>
+            <div className='logo'><img src={logo} alt="logo"/> </div>
             <Link to={ROUTES_PATH.SERVICE}>SERVICES</Link>
             <Link to={ROUTES_PATH.INDUSTRIES}>INDUSTRIES</Link>
             <Link to={ROUTES_PATH.SOLUTIONS}>SOLUTIONS</Link>
